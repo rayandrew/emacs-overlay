@@ -134,7 +134,7 @@ let
   ];
 
   emacsGit = super.lib.makeOverridable (mkGitEmacs "emacs-git" ../repos/emacs/emacs-master.json) { withSQLite3 = true; withWebP = true; treeSitterPlugins = defaultTreeSitterPlugins; };
-  emacs29 = super.lib.makeOverridable (mkGitEmacs "emacs-git" ../repos/emacs/emacs-29.json) { withSQLite3 = true; withWebP = true; treeSitterPlugins = defaultTreeSitterPlugins; };
+  emacs29 = super.lib.makeOverridable (mkGitEmacs "emacs-29" ../repos/emacs/emacs-29.json) { withSQLite3 = true; withWebP = true; treeSitterPlugins = defaultTreeSitterPlugins; };
 
   emacsPgtk = super.lib.makeOverridable (mkGitEmacs "emacs-pgtk" ../repos/emacs/emacs-master.json) { withSQLite3 = true; withWebP = true; withPgtk = true; treeSitterPlugins = defaultTreeSitterPlugins; };
 
