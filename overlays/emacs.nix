@@ -144,7 +144,7 @@ let
 
 in
 {
-  inherit emacsGit emacsUnstable;
+  inherit emacsGit emacsUnstable emacs29;
 
   inherit emacsPgtk;
 
